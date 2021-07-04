@@ -13,10 +13,10 @@ def formulario(request):
     contactos = Contacto.objects.all()
     
     data = {
-        'contactos' : contactos,
-        "alert": "Guardado correctamente"
+        'contactos' : contactos
     }
     
+
     return render(request,'core/formulario.html',data)
 
 
@@ -27,10 +27,27 @@ def home(request):
     if request.method == 'POST':        
         formulario=ContactoForm(request.POST)        
         if formulario.is_valid():
-            formulario.save()            
-            
+            formulario.save()
             return redirect('formulario')
     return render(request,'core/index.html',datos)
+
+def modificar(request,id):
+    contactos = Contacto.objects.get(nombre=id)
+    datos = {
+        'form' : ContactoForm(instance=contactos)
+    }
+    if request.method == 'POST':
+        formulario=ContactoForm(data=request.POST, instance=contactos)
+        if formulario.is_valid:
+            formulario.save()
+            datos['alert']="Modificado Correctamente"
+    
+    return render(request,'core/editar.html',datos)
+
+def eliminar(request,id):
+    contactos = Contacto.objects.get(nombre=id)
+    contactos.delete()
+    return redirect(to="formulario")
 
 def nueva_categoria(request):   
     
