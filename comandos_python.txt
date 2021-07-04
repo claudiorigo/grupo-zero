@@ -3,6 +3,7 @@ python -m pip install djangorestframework
 django-admin startproject api_usuarios .
 python manage.py runserver
 python manage.py startapp core
-python manage.py migrate
+
 python manage.py createsuperuser --email admin@duoc.cl --username admin
 python api/manage.py makemigrations
+python manage.py migrate

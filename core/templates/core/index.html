@@ -18,7 +18,7 @@
         <!-- NavBar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
             <div class="container-fluid">
-                <a class="navbar-brand" href="{% static 'core/index.html' %}">
+                <a class="navbar-brand" href="{% static '../' %}">
                     <img src="{% static 'core/image/logo_01.png' %}" alt="Grupo Cero" width="30" height="30" class="d-inline-block align-text-top">
                     Grupo Cero
                 </a>
@@ -29,32 +29,32 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="{% static '../' %}">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pinturas.html">Pintura</a>
+                            <a class="nav-link" href="{% static '../pinturas' %}">Pintura</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{% static '../formulario' %}">Formulario</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="esculturas.html">Escultura</a>
+                            <a class="nav-link" href="{% static '../esculturas' %}">Escultura</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="orfebreria.html">Orfebrería</a>
+                            <a class="nav-link" href="{% static '../orfebreria' %}">Orfebrería</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="tejidos.html">Tejido</a>
+                            <a class="nav-link" href="{% static '../tejidos' %}">Tejido</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="expresiones-artisticas.html">Otras Expresiones</a>
+                            <a class="nav-link" href="{% static '../expresiones_artisticas' %}">Otras Expresiones</a>
                         </li>                        
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Agregar Nuevo
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="nueva-categoria.html">Categoría</a></li>
+                                <li><a class="dropdown-item" href="{% static '../nueva_categoria' %}">Categoría</a></li>
                                 <li><a class="dropdown-item" href="#">Artista</a></li>
                             </ul>
                         </li>                        
@@ -239,33 +239,29 @@
         </div>
         <!--/Molde-->        
         <!-- Contacto -->
-        <div class="container mt-5 mb-5">            
-            <!-- Mapa Google -->
-            
-            <div id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.8599810033907!2d-71.53570568476668!3d-33.03381918363652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de64e0dbfca3%3A0x92c21027d2d024b0!2zw4FsdmFyZXogMjMzNiwgVmnDsWEgZGVsIE1hciwgVmFscGFyYcOtc28!5e0!3m2!1ses!2scl!4v1619248262467!5m2!1ses!2scl" width="1300" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-
-            <h3 class="text-center mb-3 mt-4 contacto">
+        <div class="container mt-5 mb-5">
+             <!-- Contacto -->
+             <h3 class="text-center mb-3 mt-4 contacto">
                 Contacto General
             </h3>
-           
-            <!-- /Mapa Google -->
-
-             <!-- Contacto -->
-             
+            <br>
             <form action="" method="post" id="formulario">
                 {% csrf_token %}
-                <!--FORM START-->                 
-                <div class="from-group">
-                    {{form.as_table}}
-                </div>
-                <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
-                <input type="reset" class="btn btn-info" id="limpiar" value="Limpiar">
+                <!--FORM START-->
                 
-                    {{mensaje}}
+                <div class="row">                    
+                    <div class="col-12 form-group">
+                           {{form.as_table}}                
+                    </div>                    
+                </div>
+                
+                <br>
+                <div class="text-center">                    
+                    <input type="submit" class="btn btn-info" id="enviar" value="Enviar Mensaje">
+                    <input type="reset" class="btn btn-danger" id="limpiar" value="Limpiar">             
                 </div>
                 <!--FORM END-->
+
                 <!--
                 <div class="row">                    
                     <div class="col-md-6 form-group">
@@ -301,7 +297,15 @@
                 </div>
                 -->
                 
-            </form>    
+            </form>
+            <br><br>
+            <!-- Mapa Google -->
+            
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.8599810033907!2d-71.53570568476668!3d-33.03381918363652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de64e0dbfca3%3A0x92c21027d2d024b0!2zw4FsdmFyZXogMjMzNiwgVmnDsWEgZGVsIE1hciwgVmFscGFyYcOtc28!5e0!3m2!1ses!2scl!4v1619248262467!5m2!1ses!2scl" width="1300" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+            <!-- /Mapa Google -->  
         </div>
         <!-- /Contacto -->
 
@@ -312,7 +316,7 @@
     <!-- Pie de página -->
     <footer class="footer mt-auto py-3 bg-dark mt-3" id="contacto">
         <div class="container">
-          <span class="text-muted">Grupo Cero 2021 - © Copyrith Claudio Rigollet Meléndez.</span>
+          <span class="text-muted">Grupo Cero 2021 - © Copyrith Claudio Rigollet - Cristian Gutiérrez - Mayron Guevara.</span>
         </div>
     </footer>
       

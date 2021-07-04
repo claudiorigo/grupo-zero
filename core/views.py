@@ -31,3 +31,27 @@ def home(request):
             
             return redirect('formulario')
     return render(request,'core/index.html',datos)
+
+def nueva_categoria(request):   
+    
+    return render(request,'core/nueva-categoria.html')
+
+def pinturas(request):   
+    
+    return render(request,'core/pinturas.html')
+    
+def esculturas(request):   
+    
+    return render(request,'core/esculturas.html')
+
+def orfebreria(request):   
+    
+    return render(request,'core/orfebreria.html')
+
+def tejidos(request):   
+    
+    return render(request,'core/tejidos.html')
+
+def expresiones_artisticas(request):   
+    
+    return render(request,'core/expresiones-artisticas.html')

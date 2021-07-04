@@ -22,7 +22,7 @@ const mostrarMensaje = ()=>{
         tbody.appendChild(tr);        
     }
 };
-
+*/
 //Validar que existe informacion en los imput
 let valida = true;
 nombre.onfocus = function () {        
@@ -115,14 +115,14 @@ document.querySelector("#formulario").addEventListener('submit', (e)=>{
         console.log("Clic input invalid");
     };
     if(esValido){
-        
+        /*
         let mensajeGrupoCero = {}; //Definir Objeto
         mensajeGrupoCero.nombre = nombre;
         mensajeGrupoCero.correo = correo;
         mensajeGrupoCero.asunto = asunto;
         mensajeGrupoCero.mensaje = mensaje;
         mensajes.push(mensajeGrupoCero);
-        
+        */
         //mostrarMensaje();
         limpiarForm();
         Swal.fire("Correo enviado Correctamente.");
@@ -130,4 +130,4 @@ document.querySelector("#formulario").addEventListener('submit', (e)=>{
 });
 // MODULO FORM CONTACTO - END
 
-*/
+

@@ -22,7 +22,7 @@ boton_foto.addEventListener('click', () => {
 
 // MODULO CARDS API LOCAL - START
 const cargarCategoria = async function(){
-    let res = await axios.get("api/categoria.json");    
+    let res = await axios.get("static/core/api/categoria.json");    
     let cards = res.data.arrayCards;
 
     const contenedor = document.querySelector("#contenedor");
@@ -121,7 +121,7 @@ document.querySelector("#nueva").addEventListener('submit', (e)=>{
         card.categoria = categoria;
         card.descripcion = descripcion;
         card.image = image;        
-        console.log(document.querySelector("#image-upload").src = "image/subir-imagen.jpg");
+        console.log(document.querySelector("#image-upload").src = "static/core/image/subir-imagen.jpg");
         cards.push(card);
         mostrarCard();
         limpiarForm();
