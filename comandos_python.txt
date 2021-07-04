@@ -5,3 +5,4 @@ python manage.py runserver
 python manage.py startapp core
 python manage.py migrate
 python manage.py createsuperuser --email admin@duoc.cl --username admin
+python api/manage.py makemigrations

@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="es">    
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="image/logo_01.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Tejidos</title>
+  </head>
+  <body>
+    <!-- Cabecera -->
+    <header>
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="image/logo_01.png" alt="Grupo Cero" width="30" height="30" class="d-inline-block align-text-top">
+                    Grupo Cero
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pinturas.html">Pintura</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="esculturas.html">Escultura</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="orfebreria.html">Orfebrería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tejidos.html">Tejido</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="expresiones-artisticas.html">Otras Expresiones</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Categoría</a></li>
+                                <li><a class="dropdown-item" href="#">Artista</a></li>
+                            </ul>
+                        </li>                        
+                    </ul>
+                    <form class="d-flex">
+                        <!-- Buscar -->
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-outline-info me-2" type="submit">Buscar</button>
+                        <!-- /Buscar -->
+                    </form>
+                    <!-- user login -->
+                    <div class="flex-shrink-0 dropdown">
+                        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle show" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="true">
+                          <img src="image/login-user.png" alt="mdo" class="rounded-circle" width="32" height="32">
+                        </a>
+                        <ul class="dropdown-menu text-small shadow show" aria-labelledby="dropdownUser2" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(-112px, 34px);" data-popper-placement="bottom-end">
+                          <li><a class="dropdown-item" href="#">Nuevo Proyecto...</a></li>
+                          <li><a class="dropdown-item" href="#">Configurar</a></li>
+                          <li><a class="dropdown-item" href="#">Confirmar</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                        </ul>
+                      </div>
+                    <!-- /user login -->
+                </div>
+            </div>
+        </nav>
+        <!-- /NavBar -->         
+    </header>
+
+    <!-- Principal -->
+    <main>
+        <!-- Titulo 
+        <div class="bg-dark text-secondary px-4 py-5 text-center">
+            <div class="py-5">
+                <h4 class="display-5 fw-bold text-white">Galería de Pinturas</h4>
+            </div>
+        </div>
+        /Titulo -->
+        <!--
+        <img src="image/gallery/img_01.jpg" class="img-fluid w-100" alt="Pinturas">
+        -->
+        <div class="container-fluid">
+            <div class="row align-items-md-stretch mt-3">
+                <div class="col-md-6">
+                <div class="p-5 text-white bg-dark rounded-3">
+                    <img src="image/portada/portada_05.jpg" class="img-fluid" alt="Orfebrería">                    
+                </div>
+                </div>
+                <div class="col-md-6">
+                <div class="h-100 p-5 bg-light border rounded-3">
+                    <h2>Grupo Cero</h2>
+                    <p>Ven a conocer una gran variedad de Expresiones Artisticas de artitas internacionales y nacionales esposición abierta a toda la comunidad y a precios excesibles.</p>
+                    <button class="btn btn-outline-secondary" type="button">Enviar Mensaje</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-3" id="custom-cards">
+            <h2 class="pb-2 border-bottom">Expresiones Artisticas</h2>
+        
+            <div class="row row-cols-lg-3 align-items-stretch py-2">
+                <!--CARD 1-->
+                <div class="col mt-2">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('image/gallery/expresiones-artisticas_01.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Barberia Grupo Cero</h2>
+                        <ul class="d-flex list-unstyled mt-auto fs-5 mb-4 text-dark">
+                        <li class="me-auto">
+                            <img src="image/logo_01.png" alt="Bootstrap" class="rounded-circle border border-white" width="32" height="32">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                            <small>Luis Aguirre</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                            <small>20d</small>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!--CARD 2-->
+                <div class="col mt-2">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('image/gallery/expresiones_artisticas_02.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Piercing Grupo Cero</h2>
+                        <ul class="d-flex list-unstyled mt-auto fs-5 mb-4 text-dark">
+                        <li class="me-auto">
+                            <img src="image/logo_01.png" alt="Bootstrap" class="rounded-circle border border-white" width="32" height="32">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                            <small>Camilo Tapia</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                            <small>4d</small>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!--CARD 3-->
+                <div class="col mt-2">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('image/gallery/expresiones_artísticas_03.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Tatto Grupo Cero</h2>
+                        <ul class="d-flex list-unstyled mt-auto fs-5 mb-4 text-dark">
+                        <li class="me-auto">
+                            <img src="image/logo_01.png" alt="Bootstrap" class="rounded-circle border border-white" width="32" height="32">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                            <small>Pamela Elgueta</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                            <small>5d</small>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!--
+                CARD 4
+                <div class="col mt-2">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('image/gallery/expresiones-artisticas_04.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Letreros de Neon</h2>
+                        <ul class="d-flex list-unstyled mt-auto fs-5 mb-4 text-dark">
+                        <li class="me-auto">
+                            <img src="image/logo_01.png" alt="Bootstrap" class="rounded-circle border border-white" width="32" height="32">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                            <small>Pablo Acevedo</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                            <small>3d</small>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                CARD 5
+                <div class="col mt-2">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('image/gallery/expresiones-artisticas_05.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Información Tecnica</h2>
+                        <ul class="d-flex list-unstyled mt-auto fs-5 mb-4 text-dark">
+                        <li class="me-auto">
+                            <img src="image/logo_01.png" alt="Bootstrap" class="rounded-circle border border-white" width="32" height="32">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                            <small>Javier Parra</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                            <small>1d</small>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                CARD 6
+                <div class="col mt-2">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('image/gallery/expresiones-artisticas_06.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Información Tecnica</h2>
+                        <ul class="d-flex list-unstyled mt-auto fs-5 mb-4 text-dark">
+                        <li class="me-auto">
+                            <img src="image/logo_01.png" alt="Bootstrap" class="rounded-circle border border-white" width="32" height="32">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                            <small>María Jose Quintana</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                            <small>2d</small>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        
+        
+    </main>
+
+    <!--Agregar Nueva Obra-->
+    <div class="bg-dark text-secondary px-4 py-5 text-center">
+        <div class="py-5">
+          <h1 class="display-5 fw-bold text-white">Agregar Nueva Expresiones Artisticas</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="fs-5 mb-4">Si eres un socio de nuestra organización Grupo Cero adjunta una nueva obra para que sea vista por los usuarios de nuestra comunidad.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Iniciar Sesión</button>
+              <button type="button" class="btn btn-outline-light btn-lg px-4">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- /Agregar Nueva Obra -->
+
+    <!-- Pie de página -->
+    <footer class="footer mt-auto py-3 bg-dark mt-3">
+        <div class="container">
+          <span class="text-muted">Grupo Cero 2021 - © Copyrith Claudio Rigollet Meléndez.</span>
+        </div>
+    </footer>
+      
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
