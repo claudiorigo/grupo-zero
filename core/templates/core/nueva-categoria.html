@@ -176,7 +176,12 @@
                             <p class="card-text descripcion-card-nueva"></p>
                         </div>
                         <div class="card-footer d-grid gap-1">
-                            <code>04/06/2021</code>
+                            <code id="fecha">
+                                <script>
+                                    var f = new Date();
+                                    document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+                                </script> 
+                            </code>
                         </div>
                     </div>
                 </div>                
