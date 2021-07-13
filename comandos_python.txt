@@ -7,3 +7,41 @@ python manage.py startapp core
 python manage.py createsuperuser --email admin@duoc.cl --username admin
 python api/manage.py makemigrations
 python manage.py migrate
+
+------------------------------------------------------------------------
+profe LARONDO
+
+pip install djangorestframework
+settiing creo debajo de core → rest_vehiculo
+
+django-admin.py startapp rest_vehiculo
+django-admin.py startapp rest_contacto
+django-admin.py startapp rest_contacto
+django-admin startapp rest_contacto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

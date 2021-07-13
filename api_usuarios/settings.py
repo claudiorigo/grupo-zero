@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'core',
     'rest_contacto',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -71,6 +72,12 @@ TEMPLATES = [
         },
     },
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES':[
+       'rest_framework.authentication.TokenAuthentication', 
+    ],
+}
 
 WSGI_APPLICATION = 'api_usuarios.wsgi.application'
 
